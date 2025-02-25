@@ -1,12 +1,7 @@
 import type React from 'react';
 import Logo from '../../components/Logo';
 import { useTranslation } from '../../i18n';
-
-interface PageProps {
-  params: {
-    lng: string;
-  };
-}
+import type { PageProps } from '../../../types';
 
 const Page: React.FC<PageProps> = async ({ params }) => {
   const lng = (await params).lng;

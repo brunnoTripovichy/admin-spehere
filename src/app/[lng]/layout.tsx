@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { dir } from 'i18next';
 import './../../app/globals.css';
 import { languages } from '../i18n/settings';
+import Footer from '../layout/Footer';
 
 export const generateStaticParams = async () => {
   return languages.map((lng) => ({ lng }));
@@ -37,6 +38,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <main>{children}</main>
+        <Footer lng={lng} />
       </body>
     </html>
   );
