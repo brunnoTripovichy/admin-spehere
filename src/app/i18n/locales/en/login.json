@@ -1,6 +1,6 @@
 {
-  "title": "Login",
-  "description": "Login to your account",
+  "title": "Sign in",
+  "description": "Enter your credentials to access your account.",
   "form": {
     "username": "Username",
     "password": "Password",
