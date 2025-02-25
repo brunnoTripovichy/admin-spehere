@@ -1,0 +1,9 @@
+{
+  "title": "Connexion",
+  "description": "Connectez-vous à votre compte",
+  "form": {
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "submit": "Connexion"
+  }
+}

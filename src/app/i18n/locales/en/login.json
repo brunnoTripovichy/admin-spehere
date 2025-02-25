@@ -1,0 +1,9 @@
+{
+  "title": "Login",
+  "description": "Login to your account",
+  "form": {
+    "username": "Username",
+    "password": "Password",
+    "submit": "Login"
+  }
+}
