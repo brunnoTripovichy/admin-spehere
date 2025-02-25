@@ -12,10 +12,10 @@ const Page: React.FC<PageProps> = async ({ params }) => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="card">
-        <Logo />
+        <Logo className="flex justify-center" />
         <Heading3 className="text-center mt-3">{t('title')}</Heading3>
         <HelperTextInfo className="text-center mt-2">
-          {t('subtitle')}
+          {t('description')}
         </HelperTextInfo>
       </div>
     </div>

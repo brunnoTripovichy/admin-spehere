@@ -1,8 +1,12 @@
 import React from 'react';
 
-const Logo = () => {
+interface LogoProps {
+  className?: string;
+}
+
+const Logo: React.FC<LogoProps> = ({ className }) => {
   return (
-    <div className="logo">
+    <div className={`logo ${className}`}>
       {/* SVG Logo */}
       <svg
         width="40"
