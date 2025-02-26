@@ -1,11 +1,14 @@
 import type React from 'react';
 import Logo from '../../components/Logo';
 import { useTranslation } from '../../i18n';
-import type { PageProps } from '../../../types';
+import type { ComponentProps } from '../../../types';
 import Heading3 from '../../components/typography/Heading3';
 import HelperTextInfo from '../../components/typography/HelperTextInfo';
+import LoginForm from '../../features/login/LoginForm';
+import I18nProvider from '../../../providers/I18nProvider';
+import StoreProvider from '../../../providers/StoreProvider';
 
-const Page: React.FC<PageProps> = async ({ params }) => {
+const Page: React.FC<ComponentProps> = async ({ params }) => {
   const lng = (await params).lng;
   const { t } = await useTranslation(lng, 'login');
 
@@ -17,6 +20,15 @@ const Page: React.FC<PageProps> = async ({ params }) => {
         <HelperTextInfo className="text-center mt-2">
           {t('description')}
         </HelperTextInfo>
+
+        <StoreProvider>
+          <I18nProvider
+            namespaces={['common', 'login']}
+            initialTranslations={{}}
+          >
+            <LoginForm className="mt-3" />
+          </I18nProvider>
+        </StoreProvider>
       </div>
     </div>
   );

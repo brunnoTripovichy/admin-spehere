@@ -3,7 +3,9 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { dir } from 'i18next';
 import './../../app/globals.css';
 import { languages } from '../i18n/settings';
-import Footer from '../layout/Footer';
+import Footer from '../layouts/footer/Footer';
+import StoreProvider from '../../providers/StoreProvider';
+import I18nProvider from '../../providers/I18nProvider';
 
 export const generateStaticParams = async () => {
   return languages.map((lng) => ({ lng }));
@@ -32,13 +34,24 @@ export default async function RootLayout({
   params: Promise<{ lng: string }>;
 }>) {
   const lng = (await params).lng;
+  const namespaces = ['common'];
+  const initialTranslations: Record<string, (key: string) => string> = {};
+
   return (
     <html lang={lng} dir={dir(lng)}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <main>{children}</main>
-        <Footer lng={lng} />
+        <StoreProvider>
+          <I18nProvider
+            initialLng={lng}
+            namespaces={namespaces}
+            initialTranslations={initialTranslations}
+          >
+            <Footer />
+          </I18nProvider>
+        </StoreProvider>
       </body>
     </html>
   );
