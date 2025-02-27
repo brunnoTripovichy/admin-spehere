@@ -13,7 +13,7 @@ interface InputTextProps extends InputHTMLAttributes<HTMLInputElement> {
 const InputText = forwardRef<HTMLInputElement, InputTextProps>(
   ({ label, id, error, helperText, className = '', ...props }, ref) => {
     return (
-      <div className={`flex flex-col gap-1 w-full ${className}`}>
+      <div className={`field ${className}`}>
         {/* Label */}
         <label
           htmlFor={id}

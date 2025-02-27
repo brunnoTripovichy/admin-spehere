@@ -66,6 +66,10 @@
   .container {
     @apply max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8;
   }
+
+  .field {
+    @apply select-none flex flex-col gap-1 w-full;
+  }
 }
 
 /* ===== Utility Styles (One-Off Classes) ===== */
