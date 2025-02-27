@@ -6,6 +6,7 @@ import { languages } from '../i18n/settings';
 import Footer from '../layouts/footer/Footer';
 import StoreProvider from '../../providers/StoreProvider';
 import I18nProvider from '../../providers/I18nProvider';
+import ThemeProvider from '../../providers/ThemeProvider';
 
 export const generateStaticParams = async () => {
   return languages.map((lng) => ({ lng }));
@@ -44,13 +45,15 @@ export default async function RootLayout({
       >
         <main>{children}</main>
         <StoreProvider>
-          <I18nProvider
-            initialLng={lng}
-            namespaces={namespaces}
-            initialTranslations={initialTranslations}
-          >
-            <Footer />
-          </I18nProvider>
+          <ThemeProvider>
+            <I18nProvider
+              initialLng={lng}
+              namespaces={namespaces}
+              initialTranslations={initialTranslations}
+            >
+              <Footer />
+            </I18nProvider>
+          </ThemeProvider>
         </StoreProvider>
       </body>
     </html>

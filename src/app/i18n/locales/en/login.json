@@ -3,7 +3,9 @@
   "description": "Enter your credentials to access your account.",
   "form": {
     "username": "Username",
+    "usernamePlaceholder": "Enter your username",
     "password": "Password",
+    "passwordPlaceholder": "Enter your password",
     "submit": "Login"
   }
 }

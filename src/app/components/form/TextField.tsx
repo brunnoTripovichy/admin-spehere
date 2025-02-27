@@ -8,6 +8,7 @@ interface TextFieldProps {
   label: string;
   helperText?: string;
   className?: string;
+  placeholder?: string;
 }
 
 const TextField: React.FC<TextFieldProps> = ({
@@ -15,6 +16,7 @@ const TextField: React.FC<TextFieldProps> = ({
   label,
   helperText,
   className,
+  placeholder,
 }) => {
   const {
     control,
@@ -34,6 +36,7 @@ const TextField: React.FC<TextFieldProps> = ({
           helperText={helperText}
           className={className}
           value={field.value ?? ''}
+          placeholder={placeholder}
         />
       )}
     />

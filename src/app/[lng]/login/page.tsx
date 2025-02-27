@@ -7,6 +7,7 @@ import HelperTextInfo from '../../components/typography/HelperTextInfo';
 import LoginForm from '../../features/login/LoginForm';
 import I18nProvider from '../../../providers/I18nProvider';
 import StoreProvider from '../../../providers/StoreProvider';
+import ThemeProvider from '../../../providers/ThemeProvider';
 
 const Page: React.FC<ComponentProps> = async ({ params }) => {
   const lng = (await params).lng;

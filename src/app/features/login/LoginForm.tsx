@@ -22,11 +22,14 @@ const LoginForm: React.FC<LoginFormProps> = ({ className }) => {
 
   return (
     <div className={`flex flex-col gap-4 ${className}`}>
-      <p>{t('form.username', 'login')}</p>
+      <p></p>
 
       <Form onSubmit={(data) => console.log(data)} validationSchema={schema}>
-        <TextField name="email" label="Email" helperText="Enter your email" />
-        <TextField name="password" label="Password" />
+        <TextField
+          name="email"
+          label={t('form.username', 'login')}
+          placeholder={t('form.usernamePlaceholder', 'login')}
+        />
       </Form>
     </div>
   );

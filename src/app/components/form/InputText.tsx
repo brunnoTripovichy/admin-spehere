@@ -27,9 +27,10 @@ const InputText = forwardRef<HTMLInputElement, InputTextProps>(
           id={id}
           ref={ref}
           className={`w-full px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-3 
-            text-xs sm:text-sm md:text-base border rounded-md bg-white dark:bg-gray-900
-            text-gray-800 dark:text-gray-100 shadow-sm transition-all duration-200
+            text-xs sm:text-sm md:text-base border rounded-md bg-gray-50 dark:bg-gray-900
+            text-gray-900 dark:text-gray-100 shadow-sm transition-all duration-200
             focus:ring-2 focus:outline-none 
+            placeholder:italic placeholder:text-gray-500 dark:placeholder:text-gray-500
             ${error ? 'border-red-500 focus:ring-red-400 hover:border-red-400' : 'border-gray-300 dark:border-gray-700 focus:ring-blue-400 hover:border-gray-400'}`}
           {...props}
         />

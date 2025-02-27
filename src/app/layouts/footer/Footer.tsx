@@ -1,6 +1,7 @@
 'use client';
 
 import { useI18n } from '../../../providers/I18nProvider';
+import ThemeSwitcher from '../../features/theme/ThemeSwitcher';
 import { languages } from '../../i18n/settings';
 
 const Footer = () => {
@@ -19,6 +20,8 @@ const Footer = () => {
             <a onClick={() => changeLanguage(l)}>{l}</a>
           </span>
         ))}
+
+      <ThemeSwitcher />
     </footer>
   );
 };
