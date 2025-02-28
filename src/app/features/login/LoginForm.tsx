@@ -4,6 +4,7 @@ import { useI18n } from '../../../providers/I18nProvider';
 import Form from '../../components/form/Form';
 import * as yup from 'yup';
 import TextField from '../../components/form/TextField';
+import PasswordField from '../../components/form/PasswordField';
 
 interface LoginFormProps {
   className?: string;
@@ -29,6 +30,12 @@ const LoginForm: React.FC<LoginFormProps> = ({ className }) => {
           name="email"
           label={t('form.username', 'login')}
           placeholder={t('form.usernamePlaceholder', 'login')}
+        />
+
+        <PasswordField
+          name="password"
+          label={t('form.password', 'login')}
+          placeholder={t('form.passwordPlaceholder', 'login')}
         />
       </Form>
     </div>

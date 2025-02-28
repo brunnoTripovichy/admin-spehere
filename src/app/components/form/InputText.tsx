@@ -24,6 +24,7 @@ const InputText = forwardRef<HTMLInputElement, InputTextProps>(
 
         {/* Input Field */}
         <input
+          type="text"
           id={id}
           ref={ref}
           className={`w-full px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-3 
