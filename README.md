@@ -54,8 +54,10 @@ This project leverages **Redux Toolkit (RTK)** to manage global state efficientl
 3. **Global Access** – Uses `useSelector()` and `useDispatch()` in components  
 4. **Persistent State** – Key state values (e.g., language, auth) are stored globally  
 
-This setup ensures a **scalable, predictable, and performant** state management system in Next.js. 🚀
+This setup ensures a **scalable, predictable, and performant** state management system in Next.js.
 
+### Theme Mode (Light/Dark) Overview
+This project supports light and dark mode themes, ensuring a modern and accessible UI experience. The theme adapts automatically based on the user’s system preference, but users can also toggle between modes manually.
 
 ------
 
