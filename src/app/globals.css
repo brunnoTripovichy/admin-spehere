@@ -16,18 +16,6 @@
     --card-shadow: rgba(0, 0, 0, 0.05);
   }
 
-  .dark :root {
-    --background: #111827;
-    --foreground: #e5e7eb;
-    --primary: #3b82f6;
-    --primary-hover: #2563eb;
-    --secondary: #9ca3af;
-    --secondary-hover: #6b7280;
-    --border: #374151;
-    --card-bg: #1f2937;
-    --card-shadow: rgba(255, 255, 255, 0.05);
-  }
-
   body {
     @apply text-[var(--foreground)] bg-[var(--background)] font-sans;
     font-family: var(--font-geist-sans), sans-serif;
