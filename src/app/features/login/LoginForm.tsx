@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useI18n } from '../../../providers/I18nProvider';
 import Form from '../../components/form/Form';
@@ -25,8 +25,7 @@ const schema = yup.object().shape({
   rememberMe: yup.boolean().optional(),
 });
 
-// Create a separate component that uses useSearchParams
-const LoginFormWithParams: React.FC<LoginFormProps> = ({ className }) => {
+const LoginForm: React.FC<LoginFormProps> = ({ className }) => {
   const { t, lng } = useI18n();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -159,15 +158,6 @@ const LoginFormWithParams: React.FC<LoginFormProps> = ({ className }) => {
         </Button>
       </Form>
     </div>
-  );
-};
-
-// Main component that wraps the form with Suspense
-const LoginForm: React.FC<LoginFormProps> = ({ className }) => {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <LoginFormWithParams className={className} />
-    </Suspense>
   );
 };
 

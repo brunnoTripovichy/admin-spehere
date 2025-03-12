@@ -1,6 +1,4 @@
-import { PageProps } from '../../types/props/common';
-
-const Page = ({ params }: PageProps) => {
+const Page = () => {
   return (
     <div>
       <h1>Admin Sphere Root</h1>
