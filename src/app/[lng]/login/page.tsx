@@ -1,15 +1,15 @@
 import type React from 'react';
 import Logo from '../../components/Logo';
 import { useTranslation } from '../../i18n';
-import type { ComponentProps } from '../../../types';
 import Heading3 from '../../components/typography/Heading3';
 import HelperTextInfo from '../../components/typography/HelperTextInfo';
 import LoginForm from '../../features/login/LoginForm';
 import I18nProvider from '../../../providers/I18nProvider';
 import StoreProvider from '../../../providers/StoreProvider';
+import { PageProps } from '../../../types/props/common';
 
-const Page: React.FC<ComponentProps> = async ({ params }) => {
-  const lng = (await params).lng;
+const Page = async ({ params }: PageProps) => {
+  const lng = params.lng;
   const { t } = await useTranslation(lng, 'login');
 
   return (
