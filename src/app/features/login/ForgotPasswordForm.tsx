@@ -47,7 +47,10 @@ const ForgotPasswordForm: React.FC<ForgotPasswordFormProps> = ({
   };
 
   return (
-    <div className={`flex flex-col gap-4 ${className}`}>
+    <div
+      className={`flex flex-col gap-4 ${className}`}
+      data-testid="forgot-password-form"
+    >
       {error && (
         <div className="p-3 bg-red-100 border border-red-300 text-red-700 rounded-md text-sm">
           {error}
