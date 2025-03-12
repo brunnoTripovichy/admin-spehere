@@ -6,6 +6,19 @@
     "usernamePlaceholder": "Enter your username",
     "password": "Password",
     "passwordPlaceholder": "Enter your password",
-    "submit": "Login"
+    "submit": "Login",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "loggingIn": "Logging in...",
+    "loginFailed": "Login failed. Please try again.",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email address",
+    "invalidEmail": "Please enter a valid email address",
+    "emailRequired": "Email is required",
+    "resetPassword": "Reset Password",
+    "sending": "Sending...",
+    "resetPasswordError": "An error occurred. Please try again.",
+    "resetPasswordSuccess": "If an account exists with this email, you will receive password reset instructions.",
+    "backToLogin": "Back to Login"
   }
 }

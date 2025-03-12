@@ -1,0 +1,26 @@
+{
+  "title": "Admin Sphere",
+  "description": "Tableau de bord d'administration pour votre application",
+  "footer": {
+    "copyright": "© 2023 Admin Sphere. Tous droits réservés."
+  },
+  "navigation": {
+    "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "settings": "Paramètres",
+    "profile": "Profil",
+    "logout": "Déconnexion"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bienvenue sur votre tableau de bord",
+    "userInfo": "Informations utilisateur",
+    "stats": "Statistiques",
+    "statsDescription": "Consultez les statistiques et analyses de votre compte.",
+    "activity": "Activité récente",
+    "activityDescription": "Vérifiez l'activité récente de votre compte."
+  },
+  "name": "Nom",
+  "email": "Email",
+  "logout": "Déconnexion"
+}

@@ -4,7 +4,7 @@ import { useTranslation } from '../../i18n';
 import type { ComponentProps } from '../../../types';
 import Heading3 from '../../components/typography/Heading3';
 import HelperTextInfo from '../../components/typography/HelperTextInfo';
-import LoginForm from '../../features/login/LoginForm';
+import ForgotPasswordForm from '../../features/login/ForgotPasswordForm';
 import I18nProvider from '../../../providers/I18nProvider';
 import StoreProvider from '../../../providers/StoreProvider';
 
@@ -23,9 +23,9 @@ const Page: React.FC<ComponentProps> = async ({ params }) => {
                    text-gray-900 dark:text-gray-100 transition-all duration-200"
       >
         <Logo className="flex justify-center" />
-        <Heading3 className="text-center mt-3">{t('title')}</Heading3>
+        <Heading3 className="text-center mt-3">Forgot Password</Heading3>
         <HelperTextInfo className="text-center mt-2">
-          {t('description')}
+          Enter your email address to reset your password
         </HelperTextInfo>
 
         <StoreProvider>
@@ -33,7 +33,7 @@ const Page: React.FC<ComponentProps> = async ({ params }) => {
             namespaces={['common', 'login']}
             initialTranslations={{}}
           >
-            <LoginForm className="mt-6" />
+            <ForgotPasswordForm className="mt-6" />
           </I18nProvider>
         </StoreProvider>
       </div>

@@ -1,5 +1,29 @@
 {
   "app": {
     "title": "Admin Sphere"
-  }
+  },
+  "title": "Admin Sphere",
+  "description": "Admin dashboard for your application",
+  "footer": {
+    "copyright": "© 2023 Admin Sphere. All rights reserved."
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to your Dashboard",
+    "userInfo": "User Information",
+    "stats": "Statistics",
+    "statsDescription": "View your account statistics and analytics.",
+    "activity": "Recent Activity",
+    "activityDescription": "Check your recent account activity."
+  },
+  "name": "Name",
+  "email": "Email",
+  "logout": "Logout"
 }
